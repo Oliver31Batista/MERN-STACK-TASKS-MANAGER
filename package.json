@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Oliver31Batista/MERN-STACK-TASKS-MANAGER#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "mongoose": "^6.5.2",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

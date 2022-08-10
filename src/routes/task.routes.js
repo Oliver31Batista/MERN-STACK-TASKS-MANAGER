@@ -1,10 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.json({
-        status: "API Works!"
-    })
-})
+const Task = require('../models/task');
+
+router.get('/', async (req, res) => {
+    const tasks = await Task.find();
+    console.log(tasks)
+    res.json('received');
+});
 
 module.exports = router;
